@@ -19,12 +19,12 @@ public class WaterGearActivity extends Activity {
 		AnimationDrawable ad = (AnimationDrawable) iv.getDrawable();
 		ad.start();
 		final WaterView wv = (WaterView)findViewById(R.id.water_view);
-		wv.setCurrentPercent(0.5f);
+		wv.setProgress(50);
 		wv.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				wv.setCurrentPercent(0.9f);
+				wv.setError();
 			}
 		});
 	}
